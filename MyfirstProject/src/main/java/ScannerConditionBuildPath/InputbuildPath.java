@@ -2,7 +2,7 @@ package ScannerConditionBuildPath;
 
 
 import java.util.Scanner;
-import java.util.Random;
+
 
 public class InputbuildPath {
 	public static String Start = ("");
@@ -11,11 +11,11 @@ public class InputbuildPath {
 		
 Scanner KeyboardInputs =  new Scanner (System.in); // This is Scanner
 		
-		System.out.print("Enter Your Name : ");
+		System.out.print("\n Enter Your Name : ");
 		name = KeyboardInputs.nextLine();
 		
 		System.out.println("\nHey "+ name + "! "
-				+ "\nLet's Play a game of \" Find The Wodden BOX \" ");
+				+ "\nLet's Play a game of \" Find The Black Wodden BOX \" ");
 		
 		
 		System.out.print("\nHow old are You : ");
@@ -35,21 +35,23 @@ Scanner KeyboardInputs =  new Scanner (System.in); // This is Scanner
 		}
 		
 		 if (age >= 18 && age <=38) {
-		System.out.println("Type \"yes\" to START or \"no\" to "
+		System.out.println("Type \"Yes\" to START or \"No\" to "
 				+ "EXIT Your GAME!!!! "
 				+ "\n(Hint: Java Index)");
-		
 		System.out.print("\nGAME : ");
 		
 		Start = KeyboardInputs.next();
-		if ( Start.equals("yes")) {
+		if (( Start.equals("Yes")||( Start.equals("yes")))) {
 			InputbuildPath22.game();
 			
 		}  
 			
-			else if ( Start.equals("No")) {
+			else if (( Start.equals("no")||( Start.equals("No")))) {
 				System.out.print("Thank You! "
 						+ "\nHope to see you AGAIN");
+				while (Start.equals("no")) {
+					InputbuildPath.Inputs();
+				}
 			}
 	
 		 }

@@ -109,26 +109,49 @@ public static void game() {
 			
 			System.out.print("Materials : ");
 			String material = KeyboardInputs.next();
-			 if ( material.contentEquals("wood")  ) {
+			 if(( material.contentEquals("wood"))||( material.contentEquals("Wood"))) {
 				System.out.println("Congratulation you know what is the Box id made of"
 						+ "\n But can u find THE BOX in the Game");
 			}
 			
-			else if (material != "wood") {
+			else if((material !="wood")||(material !="Wood")) {
 				System.out.println(" \nSMH \"Face Palm\" Wrong Answer "
 						+ "Try Again");
 				System.out.print("\nMaterials : ");
 				String material1 = KeyboardInputs.next();
-				 if ( material.contentEquals("wood")  ) {
+				if(( material.contentEquals("wood"))||( material.contentEquals("Wood"))) {
 					System.out.println("Congratulation you know what is the Box id made of"
 							+ "\n But can u find THE BOX in the Game");
 				}
 				
-				else if (material1 != "wood") {
+				else if((material !="wood")||(material !="Wood")) {
 					System.out.println(" \nSMH \"Face Palm\" Wrong Answer "
 							+ "\nI dont think YOU can do this ");
 
 				}
+		 System.out.println("\nWhat is the color of the Box ");
+		 System.out.println("Color :");
+				 
+				 String Color = KeyboardInputs.next();
+				 if(( Color.contentEquals("Black"))||( Color.contentEquals("black"))) {
+					System.out.println("Ok Atlast you got the Color right"
+							+ "\n But can u find THE BOX in the Game");
+				}
+				 else if((Color !="Black")||(Color != "black")) {
+					System.out.println("Come on this was easy !!! LOOK at the title"
+							+ "\n Tray again");
+					
+					System.out.println("\nColor :");
+					 
+					 String Color1= KeyboardInputs.next();
+					 
+					 if(( Color.contentEquals("Black"))||( Color.contentEquals("black"))) {
+
+						System.out.println("Finally you got the Color right"
+								+ "\n But can u find THE BOX in the Game");
+					
+				}
+					 
 			}
 			while(direction != numbers[0]) {
 				InputbuildPath22.game();
@@ -137,8 +160,8 @@ public static void game() {
 //				System.out.print("\n\nDirections : ");	
 //				 direction = KeyboardInputs.nextInt();
 	}
-			}
-		
+		}
+	}	
 		 KeyboardInputs.close();
 		}
 		
