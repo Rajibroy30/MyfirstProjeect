@@ -8,7 +8,7 @@ public class InputbuildPath22 extends InputbuildPath{
 public static void game() {	
 	Scanner KeyboardInputs =  new Scanner (System.in);
 	
-		System.out.print("\n \nWhere will you Find the Woddden Box"
+		System.out.print("\n \nWhere will you Find the Wooden Box"
 				+ "\nDo you want to go Left, Stright or Right"
 				+ "\nType \"1\" to go Left , \"2\" to go Stright or \"3\" to go Right");
 		
@@ -115,9 +115,9 @@ public static void game() {
 			}
 			
 			else if (material != "wood") {
-				System.out.println(" SMH \"Face Palm\" Wrong Answer "
-						+ "\nTry Again");
-				System.out.print("Materials : ");
+				System.out.println(" \nSMH \"Face Palm\" Wrong Answer "
+						+ "Try Again");
+				System.out.print("\nMaterials : ");
 				String material1 = KeyboardInputs.next();
 				 if ( material.contentEquals("wood")  ) {
 					System.out.println("Congratulation you know what is the Box id made of"
@@ -125,8 +125,8 @@ public static void game() {
 				}
 				
 				else if (material1 != "wood") {
-					System.out.println(" SMH \"Face Palm\" Wrong Answer "
-							+ "\nI dont think YOU can fo this ");
+					System.out.println(" \nSMH \"Face Palm\" Wrong Answer "
+							+ "\nI dont think YOU can do this ");
 
 				}
 			}
