@@ -6,12 +6,13 @@ import java.util.Random;
 
 public class InputbuildPath {
 	public static String Start = ("");
+	public static String name = ("");
 	public static void Inputs() {
 		
 Scanner KeyboardInputs =  new Scanner (System.in); // This is Scanner
 		
 		System.out.print("Enter Your Name : ");
-		String name = KeyboardInputs.nextLine();
+		name = KeyboardInputs.nextLine();
 		
 		System.out.println("\nHey "+ name + "! "
 				+ "\nLet's Play a game of \" Find The Wodden BOX \" ");

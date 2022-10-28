@@ -18,7 +18,7 @@ public static void game() {
 		int [] numbers = {0,1,2,3};
 		
 		 if (direction == numbers[0]) {
-			 System.out.println("Congratulation "+ /* + name +*/ " You found the box");
+			 System.out.println("Congratulation "+  name + " You found the box");
 			 while(direction != numbers[0]) {
 					InputbuildPath22.game();
 					break;
@@ -38,12 +38,12 @@ public static void game() {
 			System.out.println("what is " + w +"+"+ x +":");
 			int a = KeyboardInputs.nextInt();
 			if (a == x+w) {
-				System.out.print("OK "+/* + name +*/" I see you can do basic math,"
+				System.out.print("OK " + name +" I see you can do basic math,"
 								+ "\nLets Try another one");
 			}
 				
 				else if (a != w+x ) {
-					System.out.print("OK "+ /* + name +*/" I see you can't do basic math,"
+					System.out.print("OK "+  name +" I see you can't do basic math,"
 							+ "\nLets Try another one"
 							+ "\nand You need to learn how to count");
 				}
@@ -59,7 +59,7 @@ public static void game() {
 				
 			
 			else if (b != z+y) {
-				System.out.println(/*name +*/" Go back to Primary School "
+				System.out.println(name +" Go back to Primary School "
 						+ "\nand learn how to count");
 		}
 				
@@ -79,7 +79,7 @@ public static void game() {
 			int sides = KeyboardInputs.nextInt();
 			
 			if (sides == 6) {
-			System.out.println( /*name +*/ " I see that you know a little stuff abut the box,"
+			System.out.println( name +" I see that you know a little stuff abut the box,"
 		+ "\n But can u find THE BOX in the Game");
 			}
 			else if (sides != 6) {
@@ -91,7 +91,7 @@ public static void game() {
 				int sides1 = KeyboardInputs.nextInt();
 				
 				if (sides1 == 6) {
-				System.out.println( /*name +*/ " I see that you know a little stuff abut the box,"
+				System.out.println( name +" I see that you know a little stuff abut the box,"
 			+ "\n But can u find THE BOX in the Game");
 			}
 			while(direction != numbers[0]) {
